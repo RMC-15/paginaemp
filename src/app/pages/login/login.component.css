@@ -1,0 +1,80 @@
+
+  
+  /* ---------- GENERAL ---------- */
+
+    
+  input {
+    background-image: none;
+    border: none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+  }
+  
+  svg {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  /* ---------- ALIGN ---------- */
+  .align {
+    display: grid;
+    place-items: Right;
+  }
+  
+  /* ---------- BUTTON ---------- */
+  
+  .button {
+    background-color: rgb(247, 2, 227);
+    color: #fff;
+    padding: 0.25em 1.5em;
+  }
+  
+  .button:focus,
+  .button:hover {
+    background-color: #1802e2;
+  }
+  
+  /* ---------- LOGIN ---------- */
+  .login {
+    width: 400px;
+  }
+  
+  
+  .login__header :first-child {
+    margin-top: 0;
+  }
+  
+  .login__header :last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  .login__form {
+    background-color: #95ffc2;
+    border-bottom-left-radius: 1.25em;
+    border-bottom-right-radius: 1.25em;
+    color: #777;
+    display: grid;
+    gap: 0.875em;
+    padding: 1.25em 1.625em;
+  }
+  
+  .login input {
+    border-radius: 0.1875em;
+  }
+  
+  .login input[type="user"],
+  .login input[type="password"] {
+    background-color: #eee;
+    color: #777;
+    padding: 0.25em 0.625em;
+    width: 100%;
+  }
+  
+  .login input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+  }

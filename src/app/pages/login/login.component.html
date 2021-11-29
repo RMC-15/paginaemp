@@ -1,20 +1,4 @@
 <section class="ae-container-fluid rk-main">
-    <input type="radio" name="layout-ctrl" checked id="layout-base" class="layout-ctrl-input">
-    <div class="ae-container-fluid rk-layout-ctrl-cont">
-        <label for="layout-base" class="rk-layout-ctrl">
-            <svg>
-                <use xlink:href="assets/img/symbols.svg#icon-view-default"></use>
-            </svg>
-        </label>
-    </div>
-    <input type="radio" name="layout-ctrl" id="layout-grid" class="layout-ctrl-input">
-    <div class="ae-container-fluid rk-layout-ctrl-cont">
-        <label for="layout-grid" class="rk-layout-ctrl">
-            <svg>
-                <use xlink:href="assets/img/symbols.svg#icon-view-alt"></use>
-            </svg>
-        </label>
-    </div>
     <div class="rk-layout-ctrl-mobile">
         <svg viewBox="0 0 9 9" class="layout-mob-1">
             <rect width="100%" height="100%" fill="currentColor"></rect>
@@ -31,14 +15,28 @@
     </div>
     <section class="ae-container-fluid ae-container-fluid--inner loading rk-portfolio ">
         <div class="rk-portfolio__items">
-            <a class="rk-item rk-item--flex item-1 rk-size-12 rk-tosize-6 rk-landscape ">
-                <div class="item-meta">
-                    <h2>Essential Stationery</h2>
-                    <p>Branding</p>
-                </div>
-            </a>
+            <a class="rk-item rk-item--flex item-1 rk-size-5 rk-tosize-6 rk-landscape "></a>
         </div>
     </section>
-    <div>
-    </div>
+    <section>
+        <form method="POST">
+            <body class="align">
+                <div class="login">
+                    <form action="#" class="login__form" method="POST">
+                        <div>
+                            <label for="user">User</label>
+                            <input type="user" id="user" name="user" placeholder="User">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="password">
+                        </div>
+                        <div>
+                            <input class="button" type="submit" value="Sign In">
+                        </div>
+                    </form>
+                </div>
+            </body>
+        </form>
+    </section>
 </section>
