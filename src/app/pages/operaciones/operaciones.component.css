@@ -57,20 +57,3 @@ input {
     gap: 0.875em;
     padding: 10em 25em;
   }
-  
-  .login input {
-    border-radius: 0.1875em;
-  }
-  
-  .login input[type="user"],
-  .login input[type="password"] {
-    background-color: #eee;
-    color: #777;
-    padding: 0.25em 0.625em;
-    width: 100%;
-  }
-  
-  .login input[type="submit"] {
-    display: block;
-    margin: 0 auto;
-  }
