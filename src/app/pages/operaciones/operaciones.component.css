@@ -40,10 +40,8 @@ input {
     padding: 0.25em 2.25em;
   }
   
-  .button2:focus,
-  .button2:hover {
+  .button2:focus, .button2:hover {
     background-color: #1802e2;
-    
   }
   
   
