@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Prenda } from 'src/app/prenda';
+import { PrendaService } from 'src/app/prenda.service';
 
 @Component({
   selector: 'app-empeno1',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Empeno1Component implements OnInit {
 
-  constructor() { }
+  query: String = "laptop"
+  prendas!: Prenda[]
+
+  constructor(private prendaService: PrendaService) { }
 
   ngOnInit(): void {
+    this.prendaService.getItems(this.query).subscribe(data => {
+      console.log(data)
+      this.prendas = data
+    })
   }
 
+  searchItem(): void {
+    this.prendaService.getItems(this.query).subscribe(data => {
+      console.log(data)
+      this.prendas = data
+    })
+  }
 }

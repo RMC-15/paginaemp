@@ -3,18 +3,21 @@
     <br>
     <br>
     <div class="name">
-      <input type="text" placeholder="Articulo" name="Articulo">
+      <input [ngModel]="query" type="text" placeholder="Articulo" name="Articulo" #query>
     </div>
-    <div class="submit">
-      <input type="submit" value="Buscar" id="form_button"/>
+    <div class="button">
+      <input type="submit" value="Buscar" id="form_button" (click)="searchItem()"/>
     </div>
     <div class="subject">
       <label for="subject"></label>
       <select placeholder="Subject line" name="subject" id="subject_input" required>
         <option disabled hidden selected>Seleccione un Articulo</option>
-        <option>Articulo 1</option>
-        <option>Articulo 2</option>
-        <option>Articulo 3</option>
+        <option *ngFor="let prenda of prendas">
+          {{
+            prenda.modelo + ' ' + prenda.marca + ' ' + prenda.almacenamiento + ' ' +
+            prenda.ram
+          }}
+        </option>
       </select>
     </div>
     <br>
