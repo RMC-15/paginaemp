@@ -3,7 +3,7 @@
     <br>
     <br>
     <div class="name">
-      <input type="text" placeholder="Articulo" name="query" #query>
+      <input type="text" placeholder="Articulo" name="query" #query required>
     </div>
     <div class="button">
       <input type="button" value="Buscar" id="form_button" (click)="searchItem()"/>
@@ -42,10 +42,10 @@
     </div>
     <br>
     <div class="siguiente">
-      <input type="submit" value="siguiente" id="siguiente"/>
+      <input routerLink="empeno2" type="submit" value="siguiente" id="siguiente"/>
     </div>
     <div class="atras">
-      <input type="submit" value="Atrás" id="atras"/>
+      <input routerLink="" value="Atrás" id="atras"/>
     </div>
   </form><!-- // End form -->
 </div><!-- // End #container -->
