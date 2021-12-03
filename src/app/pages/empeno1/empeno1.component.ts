@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Prenda } from 'src/app/prenda';
 import { PrendaService } from 'src/app/prenda.service';
 
@@ -9,22 +9,27 @@ import { PrendaService } from 'src/app/prenda.service';
 })
 export class Empeno1Component implements OnInit {
 
-  query: String = "laptop"
+  @ViewChild('query', {static: true}) queryElement: ElementRef;
+  query: String = ""
   prendas!: Prenda[]
 
-  constructor(private prendaService: PrendaService) { }
+  constructor(
+    private prendaService: PrendaService,
+    queryElement: ElementRef
+  ) 
+  { 
+    this.queryElement = queryElement
+  }
 
   ngOnInit(): void {
-    this.prendaService.getItems(this.query).subscribe(data => {
-      console.log(data)
-      this.prendas = data
-    })
   }
 
   searchItem(): void {
-    this.prendaService.getItems(this.query).subscribe(data => {
-      console.log(data)
-      this.prendas = data
-    })
+    this.query = this.queryElement.nativeElement.value
+    if (this.query.length > 0) {
+      this.prendaService.getItems(this.query).subscribe(data => {
+        this.prendas = data
+      })
+    }
   }
 }

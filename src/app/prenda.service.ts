@@ -15,7 +15,6 @@ export class PrendaService {
   constructor(private httpClient: HttpClient) { }
 
   public getItems(query: String): Observable<any> {
-    console.log(this.baseURL + query)
     return this.httpClient.get(this.baseURL + query)
   }
 }
