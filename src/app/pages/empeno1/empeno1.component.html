@@ -3,10 +3,9 @@
     <br>
     <br>
     <div class="name">
-      <label for="name"></label>
-      <input type="text" placeholder="Articulo" name="name" id="name_input" required>
+      <input type="text" placeholder="Articulo" name="Articulo" required>
     </div>
-      <div class="submit">
+    <div class="submit">
       <input type="submit" value="Buscar" id="form_button" />
     </div>
     <div class="subject">
@@ -18,11 +17,31 @@
         <option>Articulo 3</option>
       </select>
     </div>
-    
   </form><!-- // End form -->
 </div><!-- // End #container -->
-<div class="edo_prenda">
-    <label for="edo_prenda"></label>
-    <input type="text" placeholder="Estado de prenda" edo_prenda="edo_prenda" id="name_input" required>
-    <label for="Préstamo"></label>
-</div>
+<form>
+  <div class="edo_prenda">
+    <input type="text" placeholder="Estado de prenda" name="edo_prenda" required>
+  </div>
+  <div class="pres_min">
+      <label type="text" name="pres_min">Préstamo mínimo</label>
+  </div>
+  <div class="pres_max">
+      <label type="text" name="pres_max">Préstamo máximo</label>
+  </div>
+</form>
+<form>
+  <div class="monto">
+    <label for monto>Préstamo Aprobado</label>
+    <input type="text" placeholder="monto" name="edo_prenda" required>
+  </div>
+  <br>
+  <div class="siguiente">
+    <input type="submit" value="siguiente" id="siguiente"/>
+  </div>
+</form>
+<form>
+  <div class="atras">
+    <input type="submit" value="Atrás" id="atras"/>
+  </div>
+</form>
