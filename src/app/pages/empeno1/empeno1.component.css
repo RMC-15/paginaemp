@@ -26,22 +26,17 @@ input {
   line-height: normal;
 }
 
-textarea {
-  overflow: auto;
-}
-
 #container {
   border: solid 3px #c2ffbf;
-  max-width: 768px;
+  max-width: 800px;
   margin: 60px auto;
-  position: relative;
 }
 
 form {
   padding: 37.5px;
   margin: 10px;
 }
-input[type='text'], [type='email'], select, textarea {
+input[type='text'], [type='email'], select{
 	background: none;
   border: none;
 	border-bottom: solid 2px #474544;
@@ -65,14 +60,14 @@ input[type='text'], [type='email'], select, textarea {
 	transition: all 0.3s;
 }
 
-input[type='text']:focus, [type='email']:focus, textarea:focus {
+input[type='text']:focus, [type='email']:focus {
 	outline: none;
 	padding: 0 0 0.875em 0;
 }
 
 .name {
 	float: left;
-	width: 75%;
+	width: 60%;
 }
 
 .edo_prenda {
@@ -87,7 +82,6 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 
 .pres_max{
     float: right;
-    width: 30%;
 }
 
 .monto{
@@ -95,14 +89,19 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
   width: 30%;
 }
 
+.submit{
+  float: right;
+  width: 30%;
+}
+
 .atras{
-  float: left;
+  float: right;
   width: 30%;
 }
 
 .siguiente{
   float: right;
-  width: 30%;
+  width: 15%;
 }
 
 #form_button {
@@ -129,7 +128,7 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
   color: #F2F3EB;
 }
 
-#atras {
+#atras{
   background: rgb(247, 2, 227);
   border: solid 2px #474544;
   color: #F2F3EB;
@@ -150,7 +149,7 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 
 #atras:hover {
     background-color: #1802e2;
-  color: #F2F3EB;
+    color: #F2F3EB;
 }
 
 #siguiente {
@@ -173,6 +172,6 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 }
 
 #siguiente:hover {
-    background-color: #1802e2;
+  background-color: #1802e2;
   color: #F2F3EB;
 }
