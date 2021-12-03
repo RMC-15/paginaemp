@@ -12,7 +12,6 @@
       <label for="subject"></label>
       <select placeholder="Subject line" name="subject" id="subject_input" required>
         <option disabled hidden selected>Seleccione un Articulo</option>
-        <option>Seleccione</option>
         <option *ngFor="let prenda of prendas">
           {{
             prenda.modelo + ' ' + prenda.marca + ' ' + prenda.almacenamiento + 'GB ' +
@@ -25,7 +24,12 @@
     <br>
     <br>
     <div class="edo_prenda">
-      <input type="text" placeholder="Estado de prenda" name="edo_prenda">
+      <select type="text" placeholder="Estado de prenda" name="edo_prenda">
+        <option disabled hidden selected>Estado de prenda</option>
+        <option>Bueno</option>
+        <option>Medio</option>
+        <option>Malo</option>
+      </select>
     </div>
     <div class="pres_max">
       <label type="text" name="pres_max">Préstamo máximo</label>

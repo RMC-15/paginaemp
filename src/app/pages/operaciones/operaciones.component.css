@@ -27,8 +27,7 @@ input {
     padding: 0.25em 1.5em;
   }
   
-  .button1:focus,
-  .button1:hover {
+  .button1:focus, .button1:hover {
     background-color: #1802e2;
   }
 
@@ -52,6 +51,7 @@ input {
     border-bottom-right-radius: 1.25em;
     color: #777;
     display: grid;
+    place-content: center;
     gap: 0.875em;
     padding: 10em 25em;
   }
