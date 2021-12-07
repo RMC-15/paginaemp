@@ -12,7 +12,7 @@ import { Pago3Component } from './pages/pago3/pago3.component';
 const routes: Routes = [
   { path: '', component: OperacionesComponent},
   { path: 'empeno1', component: Empeno1Component},
-  { path: 'empeno1/empeno2', component: Empeno2Component},
+  { path: 'empeno2', component: Empeno2Component},
   { path: 'empeno3', component: Empeno3Component},
   { path: 'pago1', component: Pago1Component},
   { path: 'pago2', component: Pago2Component},
