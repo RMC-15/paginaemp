@@ -10,11 +10,19 @@ import { Observable } from 'rxjs';
 })
 export class PrendaService {
 
-  private baseURL = "http://10.60.63.100:5000/v1/item/?query=" 
+  private baseURL = "http://10.60.63.100:5000/v1/" 
 
   constructor(private httpClient: HttpClient) { }
 
+  /** Retorna la busqueda en el catalogo de prendas */
   public getItems(query: String): Observable<any> {
-    return this.httpClient.get(this.baseURL + query)
+    let endpoint = this.baseURL + "item/?query=" + query
+    return this.httpClient.get(endpoint)
+  }
+
+  /** Retornar el catalogo de estados de prenda */
+  public getCatEst(): Observable<any> {
+    let endpoint = this.baseURL + "cat_est_prenda"
+    return this.httpClient.get(endpoint)
   }
 }

@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { EstadoPrenda } from 'src/app/estado_prenda';
 import { Prenda } from 'src/app/prenda';
 import { PrendaService } from 'src/app/prenda.service';
 
@@ -11,7 +12,9 @@ export class Empeno1Component implements OnInit {
 
   @ViewChild('query', {static: true}) queryElement: ElementRef;
   query: String = ""
+
   prendas!: Prenda[]
+  estado_prendas!: EstadoPrenda[]
 
   constructor(
     private prendaService: PrendaService,
@@ -22,6 +25,9 @@ export class Empeno1Component implements OnInit {
   }
 
   ngOnInit(): void {
+    this.prendaService.getCatEst().subscribe(data => {
+      this.estado_prendas = data
+    })
   }
 
   searchItem(): void {

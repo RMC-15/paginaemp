@@ -23,9 +23,11 @@
     <div class="edo_prenda">
       <select type="text" placeholder="Estado de prenda" name="edo_prenda">
         <option disabled hidden selected>Estado de prenda</option>
-        <option>Bueno</option>
-        <option>Medio</option>
-        <option>Malo</option>
+        <option *ngFor="let estado of estado_prendas">
+          {{
+            estado.estado_prenda
+          }}
+        </option>
       </select>
     </div>
     <div class="pres_max">
