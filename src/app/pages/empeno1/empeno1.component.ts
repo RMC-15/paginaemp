@@ -17,7 +17,7 @@ export class Empeno1Component implements OnInit {
   prendas!: Prenda[]
   estadoPrendas!: EstadoPrenda[]
 
-  selectedDetallePrenda: number = 0
+  selectedDetallePrenda: number = -1
   selectedEstadoPrenda: number = 0
 
   prestamoMinimo: number = 0
@@ -48,6 +48,10 @@ export class Empeno1Component implements OnInit {
   }
 
   calcular(): void {
+    if (this.selectedDetallePrenda === -1) {
+      return
+    }
+
     let montoAforo = this.prendas.find(e => {
       return e.id_detalle_prenda == this.selectedDetallePrenda
     })?.monto_aforo
