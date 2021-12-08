@@ -1,4 +1,3 @@
-import { BindingScope } from '@angular/compiler/src/render3/view/template';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { EstadoPrenda } from 'src/app/estado_prenda';
 import { Prenda } from 'src/app/prenda';
