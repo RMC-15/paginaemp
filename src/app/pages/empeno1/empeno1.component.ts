@@ -1,3 +1,4 @@
+import { BindingScope } from '@angular/compiler/src/render3/view/template';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { EstadoPrenda } from 'src/app/estado_prenda';
 import { Prenda } from 'src/app/prenda';
@@ -14,7 +15,14 @@ export class Empeno1Component implements OnInit {
   query: String = ""
 
   prendas!: Prenda[]
-  estado_prendas!: EstadoPrenda[]
+  estadoPrendas!: EstadoPrenda[]
+
+  selectedDetallePrenda: number = 0
+  selectedEstadoPrenda: number = 0
+
+  prestamoMinimo: number = 0
+  prestamoMaximo: number = 0
+  prestamoMontoAprobado: number = 0
 
   constructor(
     private prendaService: PrendaService,
@@ -26,7 +34,7 @@ export class Empeno1Component implements OnInit {
 
   ngOnInit(): void {
     this.prendaService.getCatEst().subscribe(data => {
-      this.estado_prendas = data
+      this.estadoPrendas = data
     })
   }
 
@@ -36,6 +44,27 @@ export class Empeno1Component implements OnInit {
       this.prendaService.getItems(this.query).subscribe(data => {
         this.prendas = data
       })
+    }
+  }
+
+  calcular(): void {
+    let montoAforo = this.prendas.find(e => {
+      return e.id_detalle_prenda == this.selectedDetallePrenda
+    })?.monto_aforo
+    
+    let montos: number[] = []
+    this.estadoPrendas.forEach(e => {
+      montos.push(e.porc_aforo * Number(montoAforo))
+    })
+
+    let porcAforo = this.estadoPrendas.find(e => {
+      return e.id_cat_est_prenda == this.selectedEstadoPrenda
+    })?.porc_aforo
+
+    if (porcAforo && montoAforo) {
+      this.prestamoMontoAprobado = Number(montoAforo) * Number(porcAforo)
+      this.prestamoMinimo = Math.min(...montos)
+      this.prestamoMaximo = Math.max(...montos)
     }
   }
 }
