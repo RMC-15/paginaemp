@@ -1,7 +1,7 @@
 <p>pago2 works!</p>
 <br>
 <br>
-<br>
+
 <p align ="center" >
 <iframe id="Datos"
 type = ""
@@ -11,15 +11,30 @@ height="300"
 value="Datos">
 </iframe>
 
+<table align = "right" class="default">
+  <tr align = "center">
+    <td align = "right">DEUDA</td>
+    <td align = "left">PAGO</td>
+  </tr>
+  <tr >
+      <td align = "right">
+      <label width = "20"  height= "30" for="Monto">Monto</label>
 
-  <div>
-<P> Monto: <input type="text" name="nombre"/></P>
-  </div>
 
-
-
-<div>
-  <input class="button1" type="submit" value="Prueba">
-</div>
+    </td>
+    <td align = "left">
+      <label width = "20" height= "30" for="datos_Monto"> </label>
+              <input pe= "text" placeholder="Datos_monto" id="">
+    </td>
+  </tr>
+  <tr >
+      <td align = "right"><div class="ATRÁS">
+      <input routerLink="/empeno2" type="submit" value="ATRÁS" id="atras"/>
+    </div></td>
+    <td align = "left"><div class="PAGADO">
+      <input type="button" routerLink="" value="PAGADO" id="PAGADO"/>
+    </div></td>
+  </tr>
+</table>
 
 
