@@ -1,0 +1,13 @@
+iframe {
+  border: 2px solid rgb(177, 174, 174);
+  width: 45%;
+  background-color: #dcdcdc;
+}
+
+.output {
+  background: rgb(78, 78, 78);
+}
+
+.input{
+  background: rgb(78, 78, 78);
+}
