@@ -1,59 +1,63 @@
-input {
-    background-image: none;
-    border: none;
-    font: inherit;
-    margin: 0;
-    padding: 0;
-    transition: all 0.3s;
-  }
-  
-  svg {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-  }
-  
-  /* ---------- ALIGN ---------- */
-  .align {
-    display: grid;
-    place-items: Center;
-  }
-  
-  /* ---------- button1 ---------- */
-  
-  .button1 {
-    background-color: rgb(247, 2, 227);
-    color: #fff;
-    padding: 0.25em 1.5em;
-  }
-  
-  .button1:focus,
-  .button1:hover {
-    background-color: #1802e2;
-  }
+#container {
+  border: solid 3px #c2ffbf;
+  max-width: 50px;
+  margin: 100px auto;
+}
 
-   /* ---------- button2 ---------- */
-  
-   .button2 {
-    background-color: rgb(247, 2, 227);
-    color: #fff;
-    padding: 0.25em 2.25em;
-  }
-  
-  .button2:focus,
-  .button2:hover {
+.pago{
+  float: left;
+  width: 0%;
+}
+
+.empeno{
+  float: left;
+  width: 0%;
+}
+
+#pago{
+  background: rgb(247, 2, 227);
+  border: solid 2px #474544;
+  color: #F2F3EB;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 0.25em 3em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#pago:hover {
     background-color: #1802e2;
-    
-  }
-  
-  
-  /* -----------Centrado----------*/
-  .login__form {
-    background-color: #c2ffbf;
-    border-bottom-left-radius: 1.25em;
-    border-bottom-right-radius: 1.25em;
-    color: #777;
-    display: grid;
-    gap: 0.875em;
-    padding: 10em 25em;
-  }
+    color: #F2F3EB;
+}
+
+#empeno {
+  background: rgb(247, 2, 227);
+  border: solid 2px #474544;
+  color: #F2F3EB;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 0.25em 2.25em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#empeno:hover {
+  background-color: #1802e2;
+  color: #F2F3EB;
+}  

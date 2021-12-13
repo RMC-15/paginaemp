@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -14,6 +15,8 @@ import { OperacionesComponent } from './pages/operaciones/operaciones.component'
 import { Pago1Component } from './pages/pago1/pago1.component';
 import { Pago2Component } from './pages/pago2/pago2.component';
 import { Pago3Component } from './pages/pago3/pago3.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import { Pago3Component } from './pages/pago3/pago3.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

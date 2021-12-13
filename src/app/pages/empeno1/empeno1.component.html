@@ -1,1 +1,53 @@
-<p>empeno1 works!</p>
+<div id="container">
+  <form action="#" method="post" id="contact_form">
+    <div class="name">
+      <input type="text" placeholder="Articulo" name="query" #query required>
+    </div>
+    <div class="button">
+      <input type="button" value="Buscar" id="form_button" (click)="searchItem()"/>
+    </div>
+    <div class="subject">
+      <label for="subject"></label>
+      <select [(ngModel)]="selectedDetallePrenda" placeholder="Subject line" name="subject" id="subject_input" required>
+        <option disabled hidden selected>Seleccione un Articulo</option>
+        <option *ngFor="let prenda of prendas" value="{{prenda.id_detalle_prenda}}">
+          {{
+            prenda.modelo + ' ' + prenda.marca + ' ' + prenda.almacenamiento + 'GB ' +
+            prenda.ram + ' GB RAM'
+          }}
+        </option>
+      </select>
+    </div>
+    <br>
+    <br>
+    <div class="edo_prenda">
+      <select [(ngModel)]="selectedEstadoPrenda" type="text" placeholder="Estado de prenda" name="edo_prenda" (change)="calcular()" required>
+        <option disabled hidden selected>Estado de prenda</option>
+        <option *ngFor="let estado of estadoPrendas" value="{{estado.id_cat_est_prenda}}">
+          {{
+            estado.estado_prenda
+          }}
+        </option>
+      </select>
+    </div>
+    <div class="pres_max">
+      <label type="text" name="pres_max">Préstamo máximo: {{prestamoMaximo.toFixed(2)}}</label>
+  </div>
+    <div class="pres_min">
+        <label type="text" name="pres_min">Préstamo mínimo: {{prestamoMinimo.toFixed(2)}}</label>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="monto">
+      <label for monto>Préstamo Aprobado: {{prestamoMontoAprobado.toFixed(2)}}</label>
+    </div>
+    <br>
+    <div class="siguiente">
+      <input routerLink="/empeno2" type="submit" value="siguiente" id="siguiente"/>
+    </div>
+    <div class="atras">
+      <input type="button" routerLink="" value="Atrás" id="atras"/>
+    </div>
+  </form><!-- // End form -->
+</div><!-- // End #container -->

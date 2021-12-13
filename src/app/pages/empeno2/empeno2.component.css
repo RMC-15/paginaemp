@@ -1,11 +1,150 @@
-.datos-de-empeño {
-    width: auto; /* 276px */
-    height: auto; /* 78px */
-    overflow: visible;
-    white-space: pre;
-    font-family: "Inter", sans-serif;
-    color: #000000;
-    font-size: 33px;
-    letter-spacing: 0px;
-    line-height: 1.2;
-  }
+input {
+  line-height: normal;
+}
+
+#container {
+  border: solid 3px #c2ffbf;
+  max-width: 1000px;
+  margin: 15px auto;
+}
+
+form {
+  padding: 37.5px;
+  margin: 10px;
+}
+
+.fecha_ini {
+	float: left;
+	width: 20%;
+}
+
+.fecha_lim {
+	float: left;
+	width: 20%;
+}
+
+.monto_pres {
+	float: left;
+	width: 30%;
+}
+
+.aforo {
+	float: left;
+	width: 30%;
+}
+
+.plazo {
+	float: left;
+	width: 30%;
+}
+
+input[type='text']{
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.atras{
+  float: right;
+  width: 30%;
+}
+
+.siguiente{
+  float: right;
+  width: 15%;
+}
+
+#form_button {
+  background: rgb(247, 2, 227);
+  border: solid 2px #474544;
+  color: #F2F3EB;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 0.25em 2.25em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background-color: #1802e2;
+  color: #F2F3EB;
+}
+
+#atras{
+  background: rgb(247, 2, 227);
+  border: solid 2px #474544;
+  color: #F2F3EB;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 0.25em 2.25em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#atras:hover {
+    background-color: #1802e2;
+    color: #F2F3EB;
+}
+
+#siguiente {
+  background: rgb(247, 2, 227);
+  border: solid 2px #474544;
+  color: #F2F3EB;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 0.25em 2.25em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#siguiente:hover {
+  background-color: #1802e2;
+  color: #F2F3EB;
+}
