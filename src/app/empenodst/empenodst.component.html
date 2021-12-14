@@ -3,13 +3,14 @@
 <br>
 <br>
 <br>
-<div class="container">
+<div class="container" style="margin: 60px auto;">
     <form>
         <div class="mb-3">
             <a routerLink="/empeno3" class="btn btn-success">Agregar nuevo cliente
                 <i class="fa fa-plus"></i>
             </a>
         </div>
+        <br>
         <div class="row">
             <div class="col">
                 <input name="query" id="query" class="form-control" type="text" placeholder="Nombre" #query>
@@ -31,7 +32,7 @@
             <tr *ngFor="let x of clientSearchResult; let indexe = index" scope="row">
                 <td>{{indexe + 1}}</td>
                 <td>{{x.nombre_completo}}</td>
-                <td><a routerLink="/empeno2" class="btn btn-success">Seleccionar</a></td>
+                <td><a routerLink="/empeno2" class="btn">Seleccionar</a></td>
             </tr>
         </tbody>
     </table>
