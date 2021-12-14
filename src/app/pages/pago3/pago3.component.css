@@ -10,19 +10,14 @@ iframe {
   width: 30%;
 }
 
-.input{
-  background: rgb(6, 82, 245);
-  float: right;
-  width: 15%;
 
-}
 label
 {
-
-  margin: 5px 100px 5px 50px;
+  margin: 5px 100px 5px 10px;
   font-family: 'Helvetica', Arial, sans-serif;
   font-size: 0.875em;
   font-weight: bold;
+
 
 }
 th, td {
@@ -44,7 +39,7 @@ button, select {
 button, input, select, textarea {
   color: #474544;
   font: inherit;
-  margin: 5px 100px 5px 50px;
+  margin: 10px 100px 10px 50px;
 
 }
 button {
@@ -58,7 +53,7 @@ button, select {
 button, input, select, textarea {
   color: #5A5A5A;
   font: inherit;
-  margin: 5px 100px 5px 100px;
+  margin: 10px 100px 10px 100px;
 }
 #form_button {
   background: rgb(247, 2, 227);
@@ -107,7 +102,6 @@ button, input, select, textarea {
     background-color: #1802e2;
     color: #F2F3EB;
 }
-
 
 .Salir{
 
