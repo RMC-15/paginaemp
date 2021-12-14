@@ -65,7 +65,7 @@ input {
 
 .Tipid {
   float: left;
-  width: 22%;
+  width: 25%;
 }
 
 .Phone {
@@ -185,7 +185,7 @@ text-transform: uppercase;
     background-color: #1802e2;
     color: #F2F3EB;
   }
-  
+
   #atras{
     background: rgb(247, 2, 227);
     border: solid 2px #474544;
