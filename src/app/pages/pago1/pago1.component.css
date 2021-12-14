@@ -62,7 +62,6 @@ html {
       width: 60%;
   }
   
-  
   .atras{
     float: right;
     width: 30%;
@@ -72,7 +71,9 @@ html {
     float: right;
     width: 15%;
   }
-  
+  .button{
+    float: right;
+  }
   #form_button {
     background: rgb(247, 2, 227);
     border: solid 2px #474544;

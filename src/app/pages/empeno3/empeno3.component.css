@@ -13,31 +13,111 @@ input {
     margin: 10px;
   }
   
-  .fecha_ini {
-      float: left;
-      width: 20%;
-  }
-  
-  .fecha_lim {
-      float: left;
-      width: 20%;
-  }
-  
-  .monto_pres {
+  .name {
       float: left;
       width: 30%;
   }
   
-  .aforo {
+  .name3 {
       float: left;
       width: 30%;
   }
   
-  .plazo {
+  .name4 {
       float: left;
       width: 30%;
   }
   
+  .age {
+      float: left;
+      width: 10%;
+  }
+  
+  .calle {
+      float: left;
+      width: 30%;
+  }
+
+.Num {
+  float: left;
+  width: 10%;
+}
+
+.Col {
+  float: left;
+  width: 30%;
+}
+
+.City {
+  float: left;
+  width: 30%;
+}
+
+.Cp {
+  float: left;
+  width: 10%;
+}
+
+.Cruc {
+  float: left;
+  width: 30%;
+}
+
+.Tipid {
+  float: left;
+  width: 25%;
+}
+
+.Phone {
+  float: left;
+  width: 22%;
+}
+
+.Iden {
+  float: left;
+  width: 22%;
+}
+
+.email {
+  float: left;
+  width: 22%;
+}
+
+select {
+  text-transform: none;
+}
+
+select {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+select{
+  background: none;
+border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1.000em;
+font-weight: 400;
+letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
   input[type='text']{
       background: none;
     border: none;
@@ -76,6 +156,11 @@ input {
     float: right;
     width: 15%;
   }
+
+  .Buscar{
+    float: left;
+    width: 15%;
+  }
   
   #form_button {
     background: rgb(247, 2, 227);
@@ -100,7 +185,7 @@ input {
     background-color: #1802e2;
     color: #F2F3EB;
   }
-  
+
   #atras{
     background: rgb(247, 2, 227);
     border: solid 2px #474544;
@@ -145,6 +230,30 @@ input {
   }
   
   #siguiente:hover {
+    background-color: #1802e2;
+    color: #F2F3EB;
+  }
+
+  #Buscar {
+    background: rgb(247, 2, 227);
+    border: solid 2px #474544;
+    color: #F2F3EB;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 0.25em 2.25em;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  #Buscar:hover {
     background-color: #1802e2;
     color: #F2F3EB;
   }

@@ -1,41 +1,72 @@
 <div id="container">
     <form action="#" method="post" id="contact_form">
-        <h3>Datos del empeño</h3>
-        <br>
-        <div class="fecha_ini">
-            <label for fecha_ini>Fecha inicial</label>
-            <br>
-            <label type="text" id="fecha_ini">Fecha inicial</label>
+        <h3>Datos del cliente</h3>
+        <div class="name">
+            <input type="text" placeholder="Nombre">
         </div>
-        <div class="fecha_lim">
-            <label for fecha_lim>Fecha límite</label>
-            <br>
-            <label type="text" id="fecha_lim">Fecha límite</label>
+        <div class="name3">
+            <input type="text" placeholder="Apellido Paterno">
         </div>
-        <div class="monto_pres">
-            <label for monto_pres>Monto de préstamo</label>
-            <br>
-            <label type="text" id="monto_pres">Monto de préstamo</label>
+        <div class="name4">
+            <input type="text" placeholder="Apellido Materno">
         </div>
-        <div class="taza">
-            <label for taza>Taza de empeño</label>
-            <br>
-            <label type="text" id="taza">Taza de empeño</label>
-        </div>
-        <br>
-        <div class="plazo">
-            <label for plazo>Plazos</label>
-            <br>
-            <label type="text" id="plazo">Plazos</label>
+        <div class="age">
+            <input type="text" placeholder="Edad">
         </div>
         <br>
         <br>
         <br>
+        <h3>Dirección</h3>
+        <div class="calle">
+            <input type="text" placeholder="Calle">
+        </div>
+        <div class="Num">
+            <input type="text" placeholder="Número">
+        </div>
+        <div class="Col">
+            <input type="text" placeholder="Colonia">
+        </div>
+        <div class="City">
+            <input type="text" placeholder="Ciudad">
+        </div>
+        <div class="Cp">
+            <input type="text" placeholder="C.P.">
+        </div>
+        <div class="Cruc">
+            <input type="text" placeholder="Cruces">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Otros datos</h3>
+        <div class="Tipid">
+            <select type="text" placeholder="Tipo de identificación" name="Tipid">
+              <option disabled hidden selected>Tipo de identificación</option>
+              <option>INE</option>
+              <option>Pasaporte</option>
+              <option>Cartilla</option>
+            </select>
+          </div>
+        <div class="Iden">
+            <input type="text" placeholder="N. de identifiación">
+        </div>
+        <div class="Phone">
+            <input type="text" placeholder="Teléfono">
+        </div>
+        <div class="email">
+            <input type="text" placeholder="Correo">
+        </div>
       <div class="siguiente">
-        <input routerLink="" type="submit" value="siguiente" id="siguiente"/>
+        <input routerLink="/pago3" type="button" value="siguiente" id="siguiente"/>
       </div>
       <div class="atras">
         <input type="button" routerLink="/empeno2" value="Atrás" id="atras"/>
+      </div>
+      <div class="Buscar">
+        <input type="submit" value="Buscar" id="Buscar"/>
       </div>
     </form><!-- // End form -->
 </div><!-- // End #container -->

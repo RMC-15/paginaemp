@@ -4,10 +4,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  background: #F2F3EB;
-}
-
 button {
   overflow: visible;
 }
@@ -16,7 +12,7 @@ button, select {
   text-transform: none;
 }
 
-button, input, select, textarea {
+button, input, select{
   color: #5A5A5A;
   font: inherit;
   margin: 0;
