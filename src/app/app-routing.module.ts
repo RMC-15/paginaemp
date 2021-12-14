@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EmpenodstComponent } from './empenodst/empenodst.component';
 import { DesempenoComponent } from './pages/desempeno/desempeno.component';
 import { Empeno1Component } from './pages/empeno1/empeno1.component';
 import { Empeno2Component } from './pages/empeno2/empeno2.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'pago1', component: Pago1Component},
   { path: 'pago2', component: Pago2Component},
   { path: 'pago3', component: Pago3Component},
-  { path: 'desempeno', component: DesempenoComponent}
+  { path: 'desempeno', component: DesempenoComponent},
+  { path: 'empenodst', component: EmpenodstComponent}
 ];
 
 @NgModule({

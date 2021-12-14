@@ -17,6 +17,7 @@ import { Pago2Component } from './pages/pago2/pago2.component';
 import { Pago3Component } from './pages/pago3/pago3.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { EmpenodstComponent } from './empenodst/empenodst.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     OperacionesComponent,
     Pago1Component,
     Pago2Component,
-    Pago3Component
+    Pago3Component,
+    EmpenodstComponent
   ],
   imports: [
     BrowserModule,
