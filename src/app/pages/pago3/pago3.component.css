@@ -18,10 +18,11 @@ iframe {
 }
 label
 {
+
+  margin: 5px 100px 5px 50px;
   font-family: 'Helvetica', Arial, sans-serif;
   font-size: 0.875em;
   font-weight: bold;
-
 
 }
 th, td {
@@ -31,6 +32,7 @@ th, td {
 
 button {
   overflow: visible;
+
 
 }
 
@@ -42,7 +44,8 @@ button, select {
 button, input, select, textarea {
   color: #474544;
   font: inherit;
-  margin: 0;
+  margin: 5px 100px 5px 50px;
+
 }
 button {
   overflow: visible;
@@ -55,7 +58,7 @@ button, select {
 button, input, select, textarea {
   color: #5A5A5A;
   font: inherit;
-  margin: 0;
+  margin: 5px 100px 5px 100px;
 }
 #form_button {
   background: rgb(247, 2, 227);
@@ -78,10 +81,10 @@ button, input, select, textarea {
 
 #form_button:hover {
     background-color: #1802e2;
-  color: #F2F3EB;
+  color: #e40d66;
 }
 
-#atras{
+#Salir{
   background: rgb(247, 2, 227);
   border: solid 2px #474544;
   color: #F2F3EB;
@@ -100,47 +103,17 @@ button, input, select, textarea {
 	transition: all 0.3s;
 }
 
-#atras:hover {
+#Salir:hover {
     background-color: #1802e2;
     color: #F2F3EB;
 }
 
-#PAGADO {
-  background: rgb(247, 2, 227);
-  border: solid 2px #474544;
-  color: #F2F3EB;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Helvetica', Arial, sans-serif;
-  font-size: 0.875em;
-  font-weight: bold;
-  outline: none;
-  padding: 0.25em 2.25em;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
 
-#PAGADO:hover {
-  background-color: #1802e2;
-  color: #F2F3EB;
-}
+.Salir{
 
-.atras{
-
-  float: center;
+  float: right;
 
   width: 30%;
 
 }
 
-.PAGADO{
-
-  float: center;
-
-  width: 15%;
-
-}
