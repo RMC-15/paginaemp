@@ -17,6 +17,11 @@ input {
       float: left;
       width: 30%;
   }
+
+  .name2 {
+    float: left;
+    width: 30%;
+}
   
   .name3 {
       float: left;
@@ -234,7 +239,7 @@ text-transform: uppercase;
     color: #F2F3EB;
   }
 
-  #Buscar {
+  #agregar {
     background: rgb(247, 2, 227);
     border: solid 2px #474544;
     color: #F2F3EB;
@@ -253,7 +258,7 @@ text-transform: uppercase;
       transition: all 0.3s;
   }
   
-  #Buscar:hover {
+  #agregar:hover {
     background-color: #1802e2;
     color: #F2F3EB;
   }
