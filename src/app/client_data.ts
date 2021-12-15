@@ -25,6 +25,8 @@ export class ClientTel {
 }
 
 export class Client {
+    id_cat_ide!: number;
+    numero_ide!: string;
     nom_1!: string;
     nom_2!: string;
     apellido_pat!: string;

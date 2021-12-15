@@ -46,7 +46,7 @@
         <br>
         <h3>Otros datos</h3>
         <div class="Tipid">
-            <select formControlName="numero_ide" type="text" placeholder="Tipo de identificación" name="Tipid">
+            <select formControlName="id_cat_ide" type="text" placeholder="Tipo de identificación" name="Tipid">
                 <option disabled hidden selected>Tipo de Indentificación</option>
                 <option *ngFor="let ide of catIde" value="{{ide.id_cat_ide}}">
                     {{
@@ -56,7 +56,7 @@
             </select>
           </div>
         <div class="Iden">
-            <input type="text" placeholder="N. de identificación">
+            <input formControlName="numero_ide" type="text" placeholder="N. de identificación">
         </div>
         <div class="Phone">
             <input type="text" placeholder="Teléfono">

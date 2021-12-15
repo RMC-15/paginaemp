@@ -28,7 +28,10 @@ export class Empeno3Component implements OnInit {
         apellido_mat: [''],
         edad: [],
         numero_ide: [''],
-        correos: ['']
+        correos: [''],
+        num_int: [''],
+        nom_direccion: [''],
+        id_cat_ide:[''],
       })
     }
 
@@ -40,7 +43,14 @@ export class Empeno3Component implements OnInit {
 
   onSubmit(): void {
     let newClient = new Client()
-    newClient =  this.form.value
+    newClient.nom_1 = this.form.value['nom_1']
+    newClient.nom_2 = this.form.value['nom_2']
+    newClient.apellido_pat = this.form.value['apellido_pat']
+    newClient.apellido_mat = this.form.value['apellido_mat']
+    newClient.id_cat_ide = this.form.value['id_cat_ide']
+    newClient.numero_ide = this.form.value['numero_ide']
+    newClient.edad = this.form.value['edad']
+
     newClient.correos = [{
       "dir_email": this.form.value['correos'], 
       "ver_email": false
