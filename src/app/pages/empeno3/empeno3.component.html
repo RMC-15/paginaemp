@@ -1,27 +1,30 @@
 <div id="container">
-    <form action="#" method="post" id="contact_form">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
         <h3>Datos del cliente</h3>
         <div class="name">
-            <input type="text" placeholder="Nombre">
+            <input formControlName="nom_1" type="text" placeholder="Primer nombre">
+        </div>
+        <div class="name2">
+            <input formControlName="nom_2" type="text" placeholder="Segundo nombre">
         </div>
         <div class="name3">
-            <input type="text" placeholder="Apellido Paterno">
+            <input formControlName="apellido_pat" type="text" placeholder="Apellido Paterno">
         </div>
         <div class="name4">
-            <input type="text" placeholder="Apellido Materno">
+            <input formControlName="apellido_mat" type="text" placeholder="Apellido Materno">
         </div>
         <div class="age">
-            <input type="text" placeholder="Edad">
+            <input formControlName="edad" type="text" placeholder="Edad">
         </div>
         <br>
         <br>
         <br>
         <h3>Dirección</h3>
         <div class="calle">
-            <input type="text" placeholder="Calle">
+            <input formControlName="nom_direccion" type="text" placeholder="Calle">
         </div>
         <div class="Num">
-            <input type="text" placeholder="Número">
+            <input formControlName="num_int" type="text" placeholder="Número">
         </div>
         <div class="Col">
             <input type="text" placeholder="Colonia">
@@ -43,11 +46,13 @@
         <br>
         <h3>Otros datos</h3>
         <div class="Tipid">
-            <select type="text" placeholder="Tipo de identificación" name="Tipid">
-              <option disabled hidden selected>Tipo de Indentificación</option>
-              <option>INE</option>
-              <option>Pasaporte</option>
-              <option>Cartilla</option>
+            <select formControlName="numero_ide" type="text" placeholder="Tipo de identificación" name="Tipid">
+                <option disabled hidden selected>Tipo de Indentificación</option>
+                <option *ngFor="let ide of catIde" value="{{ide.id_cat_ide}}">
+                    {{
+                        ide.nom_ide
+                    }}
+                </option>   
             </select>
           </div>
         <div class="Iden">
@@ -57,7 +62,7 @@
             <input type="text" placeholder="Teléfono">
         </div>
         <div class="email">
-            <input type="text" placeholder="Correo">
+            <input formControlName="correos" type="text" placeholder="Correo">
         </div>
       <div class="siguiente">
         <input routerLink="/pago3" type="button" value="siguiente" id="siguiente"/>
@@ -65,5 +70,6 @@
       <div class="atras">
         <input type="button" routerLink="/empenodst" value="Atrás" id="atras"/>
       </div>
+      <button type="submit">Agregar</button>
     </form><!-- // End form -->
 </div><!-- // End #container -->

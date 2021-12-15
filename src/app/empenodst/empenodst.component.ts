@@ -31,7 +31,6 @@ export class EmpenodstComponent implements OnInit {
     this.clienteService.searchClient(this.query).subscribe(data => {
       if (typeof data !== "undefined" || data !== null) {
         this.clientSearchResult = data
-        console.log(this.clientSearchResult)
       }
     })
 

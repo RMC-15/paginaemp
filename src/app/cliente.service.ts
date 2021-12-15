@@ -1,13 +1,15 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Client } from './client_data';
+import { TEST_API_URL } from './constants';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClienteService {
 
-  private baseURL = "http://10.60.63.100:5000/v1/" 
+  private baseURL = TEST_API_URL 
 
   constructor(private httpClient: HttpClient) { }
 
@@ -17,4 +19,8 @@ export class ClienteService {
     return this.httpClient.get(endpoint)
   }
 
+  public addClient(client: Client): Observable<any> {
+    const endpoint = this.baseURL + 'client'
+    return this.httpClient.post(endpoint, client)
+  }
 }

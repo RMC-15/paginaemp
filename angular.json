@@ -69,10 +69,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "casaemp:build:production"
+              "browserTarget": "casaemp:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             },
             "development": {
-              "browserTarget": "casaemp:build:development"
+              "browserTarget": "casaemp:build:development",
+              "proxyConfig": "src/proxy.conf.json"
+              
             }
           },
           "defaultConfiguration": "development"
