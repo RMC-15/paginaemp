@@ -2,7 +2,7 @@
     <form (ngSubmit)="onSubmit()" [formGroup]="form">
         <h3>Datos del cliente</h3>
         <div class="name">
-            <input formControlName="nom_1" type="text" placeholder="Primer nombre">
+            <input requiredminlength="3" maxlength="10" size="10" formControlName="nom_1" type="text" placeholder="Primer nombre">
         </div>
         <div class="name2">
             <input formControlName="nom_2" type="text" placeholder="Segundo nombre">
@@ -14,7 +14,7 @@
             <input formControlName="apellido_mat" type="text" placeholder="Apellido Materno">
         </div>
         <div class="age">
-            <input formControlName="edad" type="text" placeholder="Edad">
+            <input requiredminlength="2" maxlength="2" formControlName="edad" type="text" placeholder="Edad">
         </div>
         <br>
         <br>
@@ -71,10 +71,10 @@
         <input routerLink="/pago3" type="button" value="siguiente" id="siguiente"/>
       </div>
       <div class="atras">
-        <input type="button" routerLink="/empenodst" value="Atrás" id="atras"/>
+        <input type="button" routerLink="" value="Inicio" id="atras"/>
       </div>
       <div class="agregar">
-        <button type="submit" id="agregar">Agregar</button>
+        <button (click)="alerta()" type="submit" id="agregar">Agregar</button>
       </div>
     </form><!-- // End form -->
 </div><!-- // End #container -->

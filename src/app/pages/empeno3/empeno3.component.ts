@@ -35,6 +35,10 @@ export class Empeno3Component implements OnInit {
       })
     }
 
+  alerta(){
+    alert("Cliente agregado")
+  }
+
   ngOnInit(): void {
     this.catIdeService.getItems().subscribe(data => {
       this.catIde = data

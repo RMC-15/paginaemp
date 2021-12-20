@@ -57,3 +57,27 @@ input[type='text']{
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+#atras{
+    background: rgb(247, 2, 227);
+    border: solid 2px #474544;
+    color: #F2F3EB;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 0.25em 2.25em;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  #atras:hover {
+      background-color: #1802e2;
+      color: #F2F3EB;
+  }
